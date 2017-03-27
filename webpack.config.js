@@ -4,7 +4,7 @@ module.exports = {
     entry : './src/js/main.js',
     // 打包出口
     output : {
-        path : __dirname + '/dist',
+        path : __dirname + '/dist/js',
         filename : 'bundle.js'
     },
     module : {
@@ -16,7 +16,7 @@ module.exports = {
             },*/
             {
                 test: /\.(png|jpg)$/,
-                loader: 'url-loader'
+                loader: 'file-loader?name=../../image/[name].[ext]'
             },
             {
                 test : /\.jsx?$/,
