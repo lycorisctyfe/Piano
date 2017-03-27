@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.pianoDisplayBox {
+    width: 750px;
+    height: 420px;
+    position: relative;
+}
+.pianoWrapper {
+    position: absolute;
+    left: 0;
+    top: 130px;
+    width: 3640px;
+    height: 294px;
+    overflow: hidden;
+}
+.partOfAPiano {
+    width: 455px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.whiteKey {
+    width: 65px;
+    height: 100%;
+    float: left;
+    color: #ccc;
+}
+.whiteKey_C,.whiteKey_F {
+    background: url("../image/white_key/CvsF.png") no-repeat;
+    background-size: 65px 294px;
+}
+.whiteKey_C:active , .whiteKey_F:active {
+    background: url("../image/white_key/CvsF_active.png");
+    background-size: 65px 294px;
+}
+.whiteKey_D {
+    background: url("../image/white_key/D.png") no-repeat;
+    background-size: 65px 294px;
+}
+.whiteKey_D:active {
+    background: url("../image/white_key/D_active.png") no-repeat;
+    background-size: 65px 294px;
+}
+.whiteKey_E,.whiteKey_B {
+    background: url("../image/white_key/EvsB.png") no-repeat;
+    background-size: 65px 294px;
+}
+.whiteKey_E:active,.whiteKey_B:active {
+    background: url("../image/white_key/EvsB_active.png") no-repeat;
+    background-size: 65px 294px;
+}
+.whiteKey_A {
+    background: url("../image/white_key/A.png") no-repeat;
+    background-size: 65px 294px;
+}
+.whiteKey_A:active {
+    background: url("../image/white_key/A_active.png") no-repeat;
+    background-size: 65px 294px;
+}
+.whiteKey_G {
+    background: url("../image/white_key/G.png") no-repeat;
+    background-size: 65px 294px;
+}
+.whiteKey_G:active {
+    background: url("../image/white_key/G_active.png") no-repeat;
+    background-size: 65px 294px;
+}
+
+.blackKey {
+    width: 41px;
+    height: 180px;
+    color: #ccc;
+    position: absolute;
+}
+.blackKey_C, .blackKey_F {
+    background: url("../image/black_key/C_F.png");
+    background-size: 41px 180px;
+}
+.blackKey_C:active, .blackKey_F:active {
+    background: url("../image/black_key/C_F_active.png");
+    background-size: 41px 180px;
+}
+.blackKey_C {
+    left: 40px;
+}
+.blackKey_F {
+    left: 235px;
+}
+.blackKey_D, .blackKey_A {
+    background: url("../image/black_key/D_A.png");
+    background-size: 41px 180px;
+}
+.blackKey_D:active, .blackKey_A:active {
+    background: url("../image/black_key/D_A_active.png");
+    background-size: 41px 180px;
+}
+.blackKey_D {
+    left: 115px;
+}
+.blackKey_A {
+    left: 374px;
+}
+
+.blackKey_G {
+    background: url("../image/black_key/G_.png");
+    background-size: 41px 180px;
+    left: 305px;
+}
+.blackKey_G:active {
+    background: url("../image/black_key/G_active.png");
+    background-size: 41px 180px;
+    left: 305px;
+}
+
