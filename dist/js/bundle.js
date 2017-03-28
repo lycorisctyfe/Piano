@@ -35097,11 +35097,6 @@ $(function () {
             return React.createElement(
                 "div",
                 { className: "pianoWrapper" },
-                React.createElement(
-                    "div",
-                    null,
-                    "wwwwdw555ww"
-                ),
                 lists
             );
         }

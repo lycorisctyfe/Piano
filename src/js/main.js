@@ -134,7 +134,6 @@ $(function () {
             }
             return (
                 <div className="pianoWrapper">
-                    <div>wwwwdw555ww</div>
                     {lists}
                 </div>
             );
