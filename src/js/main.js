@@ -5,7 +5,6 @@ var Instrument = require('./ins/instrument.js');
 require('../css/style.css');
 
 $(function () {
-    // 组件
     var WhiteKey = React.createClass({
         getInitialState : function () {
             return {
@@ -139,12 +138,12 @@ $(function () {
             );
         }
     });
-    
 
     ReactDOM.render(
         <PianoWrapper />,
         document.getElementById('pianoDisplayBox')
     );
-    
 
 });
+
+

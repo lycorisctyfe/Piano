@@ -35,7 +35,7 @@ module.exports = {
         new webpack.BannerPlugin("Author Lycoris_cty")
     ],
     devServer : {
-        port : 8888,
+        port : 8888
     }
 
 

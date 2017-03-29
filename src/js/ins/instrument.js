@@ -6,7 +6,7 @@
  */
 (function () {
     var frequencyParam = require("./frequencyParam/equal-temperament.js");
-    var audioContext = AudioContext || webkitAudioContext;
+    var audioContext = window.AudioContext || window.webkitAudioContext;
     var ctx = new audioContext();
 
     var Instrument = function (option) {
@@ -168,11 +168,10 @@
         return _this;
     };
 
-    //module.exports = Instrument;
-
     /**
      *  摘录https://github.com/BenzLeung
      */
+
     if (typeof module !== 'undefined' && typeof exports === 'object') {
         module.exports = Instrument;
     } else if (typeof define === 'function' && define.amd) {
@@ -183,6 +182,6 @@
         window.Instrument = Instrument;
     }
 
-})();
+}).call(this || (typeof window !== 'undefined' ? window : global));
 
 

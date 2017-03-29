@@ -1,16 +1,22 @@
 body {
     margin: 0;
     padding: 0;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
 }
+
 .pianoDisplayBox {
-    width: 750px;
-    height: 420px;
+    height: 414px;
     position: relative;
+    transform: rotate(90deg);
 }
 .pianoWrapper {
     position: absolute;
     left: 0;
-    top: 130px;
+    top: 120px;
     width: 3640px;
     height: 294px;
     overflow: hidden;
