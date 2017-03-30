@@ -10,8 +10,8 @@
  * Equal Temperament Tuning
  * Source: http://www.phy.mtu.edu/~suits/notefreqs.html
  */
-//module.exports 暂不使用module.exports 导出 
-module.exports = {
+
+const frequencyParam = {
     'C0': 16.35,
     'C#0': 17.32,
     'Db0': 17.32,
@@ -151,3 +151,4 @@ module.exports = {
     'C8': 4186.01
 };
 
+export default frequencyParam;
